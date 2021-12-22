@@ -10,12 +10,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <body>
-    <div class=".image">
-  
-    </div>
     <div class="main">
       <div class="emoji mb-6">💣🤯💥</div>
       <button class="button">Boom?</button>
     </div>
+
+    <script>
+      const newDiv = document.createElement("div");
+      const newContent = document.createTextNode("Hi there and greetings!");
+      newDiv.classList.add("image");
+      newDiv.appendChild(newContent);
+      document.body.appendChild(newDiv);
+      console.log(newDiv);
+    </script>
   </body>
 </html>
