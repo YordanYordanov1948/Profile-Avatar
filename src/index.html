@@ -10,19 +10,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <body>
-    <div class="image" onclick="myFunction()">
-      <img />
-    </div>
+    <div class="image"></div>
     <div class="main">
       <div class="emoji mb-6">💣🤯💥</div>
       <button class="button">Boom?</button>
     </div>
     <script>
-      var elements = document.getElementsByClassName("image");
+      const elements = document.getElementsByClassName("image");
 
-      function myFunction() {
-        document.getElementsByClassName("image")[0].style.fontSize = "70px";
-      }
       console.log(elements);
     </script>
   </body>
