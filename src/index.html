@@ -10,9 +10,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <body>
+    <div class="image">
+      <h1>Avatar</h1>
+    </div>
     <div class="main">
       <div class="emoji mb-6">💣🤯💥</div>
       <button class="button">Boom?</button>
     </div>
+    <script>
+      var elements = document
+        .getElementsByClassName("image")[0]
+        .addEventListener("click", myFunction);
+
+      function myFunction() {
+        document.getElementsByClassName("image")[0].style.transform =
+          "scale(2)";
+      }
+    </script>
   </body>
 </html>
